@@ -1,0 +1,6 @@
+# Downloaded light curves (all public, the scripts fetch them)
+data/
+matlab/output/
+
+__pycache__/
+*.pyc

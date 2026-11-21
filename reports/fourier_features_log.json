@@ -1,0 +1,35 @@
+{
+  "fft_matches_numpy": true,
+  "n_windows": 2026,
+  "X_full_shape": [
+    2026,
+    65
+  ],
+  "X_shape_shape": [
+    2026,
+    64
+  ],
+  "freq_range_per_day": [
+    0.015625,
+    1.0
+  ],
+  "nyquist_per_day": 1.0,
+  "splits": {
+    "train": {
+      "n": 1532,
+      "active": 400
+    },
+    "val": {
+      "n": 234,
+      "active": 72
+    },
+    "test": {
+      "n": 207,
+      "active": 48
+    },
+    "purged": {
+      "n": 53,
+      "active": 15
+    }
+  }
+}

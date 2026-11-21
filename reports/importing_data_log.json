@@ -1,0 +1,66 @@
+{
+  "downloads": {
+    "rxte_asm": {
+      "url": "https://heasarc.gsfc.nasa.gov/FTP/xte/data/archive/ASMProducts/definitive_1dwell/lightcurves/xa_aqlx1_d1.lc",
+      "file": "rxte_asm_aqlx1_dwell.lc",
+      "bytes": 12366720,
+      "sha256": "4715faeed157c691682164f74dc98e421b6fb88221e6c03ac98149065e1bb069"
+    },
+    "maxi": {
+      "url": "http://maxi.riken.jp/star_data/J1911+005/J1911+005_g_lc_1orb_all.dat",
+      "file": "maxi_aqlx1_1orbit.dat",
+      "bytes": 5498740,
+      "sha256": "378c24bd32db0e27c097cb57abc8e218e52a5b10b174b62f16c8031725036aa2"
+    },
+    "swift_bat": {
+      "url": "https://swift.gsfc.nasa.gov/results/transients/AqlX-1.orbit.lc.txt",
+      "file": "swift_bat_aqlx1_1orbit.txt",
+      "bytes": 13023177,
+      "sha256": "6104fe6b8945711f4656c989a6be07aa185b88d178fe8f1dd41910e79a55c574"
+    }
+  },
+  "asm": {
+    "dwells_raw": 79196,
+    "after_finite": 79196,
+    "after_quality_cuts": 78977,
+    "cuts": "reduced chi2 <= 1.5, exposure >= 30.0 s"
+  },
+  "maxi": {
+    "orbits_raw": 62800,
+    "after_finite_and_nonzero_err": 62653,
+    "hard_background_hits_removed": 55,
+    "kept": 62598,
+    "band": "2-10 keV (2-4 + 4-10), ph/cm2/s"
+  },
+  "cross_calibration": {
+    "scale_maxi_per_asm_cps": 0.046042261084835744,
+    "n_bins": 145,
+    "reduced_chi2": 2.7070282752533594,
+    "overlap": [
+      55054.0,
+      55846.75
+    ]
+  },
+  "grid": {
+    "bin_days": 0.5,
+    "n_bins": 22458,
+    "filled_fraction": 0.7758482500667914,
+    "filled_fraction_asm": 0.7654047523157471,
+    "filled_fraction_maxi": 0.784129011655756,
+    "norm_flux_unit_ph_cm2_s": 3.1723362072052654,
+    "active_threshold_ph_cm2_s": 0.08,
+    "active_fraction_of_bins": 0.15768843095531415
+  },
+  "windows": {
+    "n": 2026,
+    "length_points": 128,
+    "length_days": 64.0,
+    "stride_days": 4.0,
+    "min_fill": 0.7,
+    "label_rule": "active if >= 25% of filled bins active",
+    "n_active": 535,
+    "n_quiescent": 1491,
+    "n_asm": 893,
+    "n_maxi": 1133
+  }
+}
